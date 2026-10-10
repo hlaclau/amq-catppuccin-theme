@@ -1,42 +1,28 @@
 /* ==UserStyle==
-
-@name AnimeMusicQuiz Catppuccin Theme
-
-@namespace github.com/hlaclau/animemusicquiz-catppuccin-mocha-theme
-
+@name AnimeMusicQuiz Catppuccin
+@namespace github.com/hlaclau/animemusicquiz-catppuccin-theme
 @homepageURL https://github.com/hlaclau/animemusicquiz-catppuccin-theme
-
-@version 1.1.0
-
+@version 1.2.0
 @updateURL https://github.com/hlaclau/animemusicquiz-catppuccin-theme/raw/master/catppuccin.user.less
-
 @supportURL https://github.com/hlaclau/animemusicquiz-catppuccin-theme/issues
-
 @description Soothing pastel theme for AnimeMusicQuiz
-
 @author hlaclau
-
 @license MIT
 
 @preprocessor less
-
 @var select lightFlavor "Light Flavor" ["frappe:Frappé*", "macchiato:Macchiato", "mocha:Mocha"]
-
 @var select darkFlavor "Dark Flavor" ["frappe:Frappé", "macchiato:Macchiato", "mocha:Mocha*"]
-
 @var select accentColor "Accent" ["rosewater:Rosewater", "flamingo:Flamingo", "pink:Pink", "mauve:Mauve*", "red:Red", "maroon:Maroon", "peach:Peach", "yellow:Yellow", "green:Green", "teal:Teal", "blue:Blue", "sapphire:Sapphire", "sky:Sky", "lavender:Lavender", "subtext0:Gray"]
-
 ==/UserStyle== */
 
-@import "https://userstyles.catppuccin.com/lib/lib.less";
+@import "https://userstyles.catppuccin.com/lib/std/v1.less";
 
-@-moz-document url-prefix("https://animemusicquiz.com/") {
+@-moz-document domain("animemusicquiz.com") {
   /* This section applies the light/dark themes automatically based on the user's system theme. */
   :root {
     @media (prefers-color-scheme: light) {
       #catppuccin(@lightFlavor);
     }
-
     @media (prefers-color-scheme: dark) {
       #catppuccin(@darkFlavor);
     }
