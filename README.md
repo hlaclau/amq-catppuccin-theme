@@ -42,7 +42,7 @@
 ## 🙋 FAQ
 
 - Q: **_"How do I set a custom wallpaper?"_**\
-  A: Paste an image URL into the **Wallpaper URL** field in the Stylus options for this style. Leave it as `none` for the default flat background. Browsers can't load local `file://` paths, so host the image online or use a `data:image/...;base64,...` URL.
+  A: Put an image URL **in quotes**, e.g. `"https://example.com/wallpaper.png"`, into the **Wallpaper URL** field in the Stylus options for this style (Stylus passes the value to LESS as-is, so the quotes are required). Leave it as `none` for the default flat background. Browsers can't load local `file://` paths, so host the image online or use a quoted `data:image/...;base64,...` URL.
 
 - Q: **_"How do I change the flavor or accent color?"_**\
   A: Click the Stylus icon in your browser toolbar, then adjust the options under this style.
